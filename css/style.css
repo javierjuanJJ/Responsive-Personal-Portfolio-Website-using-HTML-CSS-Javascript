@@ -11,7 +11,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-:root{
+:root {
     --bg-color: #081b29;
     --second-bg-color: #112e42;
     --text-color: #ededed;
@@ -28,7 +28,7 @@ body {
     color: var(--text-color);
 }
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -47,7 +47,7 @@ body {
     font-weight: 600;
 }
 
-.navbar a{
+.navbar a {
     font-size: 1.7rem;
     color: var(--text-color);
     font-weight: 500;
@@ -80,4 +80,10 @@ section {
 
 .home-content {
     max-width: 60rem;
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
 }
