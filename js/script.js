@@ -25,7 +25,7 @@ window.onscroll = function () {
         if (top >= offset && top < offset + height){
             navLinks.forEach(value1 => {
                 value1.classList.remove('active');
-                document.querySelector('header nav a[href=' + id + ']').classList.add('active');
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
 
             });
             // Active sections for animation on scroll
