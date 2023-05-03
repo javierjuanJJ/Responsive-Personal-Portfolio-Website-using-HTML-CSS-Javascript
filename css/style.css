@@ -379,6 +379,8 @@ span {
 .education-box .education-content {
     position: relative;
     padding-left: 2rem;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .education-box .education-content::before {
@@ -390,6 +392,7 @@ span {
     background: var(--main-color);
     border-radius: 50%;
     left: -1.1rem;
+
 }
 
 .education-content .content {
@@ -398,6 +401,8 @@ span {
     border: .2rem solid var(--main-color);
     border-radius: .6rem;
     margin-bottom: 2rem;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .education-content .content::before {
@@ -407,9 +412,10 @@ span {
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--second-bg-color);
+    /*background: var(--second-bg-color);*/
     z-index: -1;
     transition: .5s;
+    background: var(--bg-color);
 }
 
 .education-content .content:hover::before {
@@ -595,6 +601,7 @@ span {
     background: transparent;
     border-radius: .6rem;
     border: .2rem solid var(--main-color);
+
 }
 
 .contact form .input-box .input-field input::placeholder,
