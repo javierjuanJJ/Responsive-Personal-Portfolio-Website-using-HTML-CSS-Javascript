@@ -112,7 +112,7 @@ section {
     width: 34.5rem;
     height: 5rem;
 }
-.btn-box .btn{
+.btn-box .btn {
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -128,11 +128,25 @@ section {
     color: var(--bg-color);
     z-index: 1;
     overflow: hidden;
+    transition: .5s;
 }
 .btn-box .btn :nth-child(2){
     background: transparent;
     color: var(--main-color);
 }
+
+.btn-box .btn:hover {
+    color: var(--main-color);
+}
+
+.btn-box .btn :nth-child(2):hover{
+    color: var(--bg-color);
+}
+
+.btn-box .btn :nth-child(2)::before{
+    background: var(--main-color);
+}
+
 .btn-box .btn::before {
     content: '';
     position: absolute;
